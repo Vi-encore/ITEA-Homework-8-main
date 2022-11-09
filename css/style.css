@@ -35,7 +35,7 @@ img {
 
 .car-wheel {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 6vw;
   animation-name: wheels__rotate;
   animation-duration: 2s;

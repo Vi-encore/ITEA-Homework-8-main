@@ -1,0 +1,139 @@
+@keyframes wheels__rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes car__running {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(225%);
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin-top: 10%;
+  width: 30vw;
+  height: 70vh;
+  animation-name: car__running;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.car-wheel {
+  position: absolute;
+  top: 35%;
+  width: 6vw;
+  animation-name: wheels__rotate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.car-wheel--1 {
+  left: 3vw;
+}
+
+.car-wheel--2 {
+  left: 22vw;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    height: 30vh;
+  }
+
+  .car-wheel {
+    top: 27%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 20vh;
+  }
+
+  .car-wheel {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .car-wheel {
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .car-wheel {
+    top: 23%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .car-wheel {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .car-wheel--1 {
+    left: 3vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .car-wheel {
+    top: 17%;
+  }
+
+  .car-wheel--1 {
+    left: 3vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .car-wheel {
+    top: 15%;
+  }
+
+  .car-wheel--2 {
+    left: 22vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .car-wheel {
+    top: 12.5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .car-wheel {
+    top: 11%;
+  }
+
+  .car-wheel--1 {
+    left: 3vw;
+  }
+
+  .car-wheel--2 {
+    left: 22vw;
+  }
+}

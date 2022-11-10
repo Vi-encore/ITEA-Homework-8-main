@@ -37,6 +37,7 @@ img {
   position: absolute;
   top: 49.5%;
   width: 6vw;
+  height: 6vw;
   animation-name: wheels__rotate;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
